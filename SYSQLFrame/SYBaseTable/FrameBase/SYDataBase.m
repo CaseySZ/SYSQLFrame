@@ -17,8 +17,8 @@
     if (self) {
         
         _dataBaseName = dataBaseName;
-        _dataBaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:dataBaseName];
-        
+        _dataBaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"SYSqlDoc"];
+        _dataBaseFilePath = [_dataBaseFilePath stringByAppendingPathComponent:dataBaseName];
         // 判断文件夹是否存在
         NSString *checkDocumentPath = [_dataBaseFilePath stringByDeletingLastPathComponent];
         NSFileManager *defaultFileManager = [NSFileManager defaultManager];
