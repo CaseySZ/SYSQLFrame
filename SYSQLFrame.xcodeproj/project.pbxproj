@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11741D6C1FBD205200856E6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741D6B1FBD205200856E6F /* AppDelegate.m */; };
+		11741D6F1FBD205200856E6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741D6E1FBD205200856E6F /* ViewController.m */; };
+		11741D721FBD205200856E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11741D701FBD205200856E6F /* Main.storyboard */; };
+		11741D741FBD205200856E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11741D731FBD205200856E6F /* Assets.xcassets */; };
+		11741D771FBD205200856E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11741D751FBD205200856E6F /* LaunchScreen.storyboard */; };
+		11741D7A1FBD205200856E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741D791FBD205200856E6F /* main.m */; };
+		11741DC21FBD402800856E6F /* SYSQLCommandHandle+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DB71FBD402800856E6F /* SYSQLCommandHandle+Update.m */; };
+		11741DC31FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DBA1FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m */; };
+		11741DC41FBD402800856E6F /* SYSQLCommandHandle+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DBD1FBD402800856E6F /* SYSQLCommandHandle+Insert.m */; };
+		11741DC51FBD402800856E6F /* SYSQLCommandHandle+Read.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DC11FBD402800856E6F /* SYSQLCommandHandle+Read.m */; };
+		11741DCB1FBD405E00856E6F /* SYBaseTable+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DCA1FBD405E00856E6F /* SYBaseTable+Insert.m */; };
+		11741DDA1FBD4C1D00856E6F /* SYDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DD11FBD4C1D00856E6F /* SYDataBase.m */; };
+		11741DDB1FBD4C1D00856E6F /* SYBaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DD21FBD4C1D00856E6F /* SYBaseTable.m */; };
+		11741DDC1FBD4C1D00856E6F /* SYBaseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DD41FBD4C1D00856E6F /* SYBaseRecord.m */; };
+		11741DDD1FBD4C1D00856E6F /* SYSQLCommandHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DD61FBD4C1D00856E6F /* SYSQLCommandHandle.m */; };
+		11741DDE1FBD4C1D00856E6F /* SYDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DD91FBD4C1D00856E6F /* SYDatabasePool.m */; };
+		11741DE71FBD4D5800856E6F /* SYBaseTable+Read.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DE61FBD4D5800856E6F /* SYBaseTable+Read.m */; };
+		11741DEA1FBD4E9A00856E6F /* SYBaseTable+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DE91FBD4E9A00856E6F /* SYBaseTable+Update.m */; };
+		11741DED1FBD4EB000856E6F /* SYBaseTable+Delete.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DEC1FBD4EB000856E6F /* SYBaseTable+Delete.m */; };
+		11741DF41FBD5CA200856E6F /* TextTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DF31FBD5CA200856E6F /* TextTable.m */; };
+		11741DFA1FBD5D9400856E6F /* TestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DF91FBD5D9400856E6F /* TestRecord.m */; };
+		11741DFD1FBD78D800856E6F /* ImageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DFC1FBD78D800856E6F /* ImageTable.m */; };
+		11741E001FBD7ABB00856E6F /* ImageRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741DFF1FBD7ABB00856E6F /* ImageRecord.m */; };
+		11741E021FBD7BB100856E6F /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11741E011FBD7BB100856E6F /* 2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11741D671FBD205200856E6F /* SYSQLFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYSQLFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11741D6A1FBD205200856E6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11741D6B1FBD205200856E6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11741D6D1FBD205200856E6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11741D6E1FBD205200856E6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11741D711FBD205200856E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11741D731FBD205200856E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11741D761FBD205200856E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11741D781FBD205200856E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11741D791FBD205200856E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11741D881FBD2CEE00856E6F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		11741DB71FBD402800856E6F /* SYSQLCommandHandle+Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYSQLCommandHandle+Update.m"; sourceTree = "<group>"; };
+		11741DB81FBD402800856E6F /* SYSQLCommandHandle+Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYSQLCommandHandle+Update.h"; sourceTree = "<group>"; };
+		11741DBA1FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYSQLCommandHandle+CreateTable.m"; sourceTree = "<group>"; };
+		11741DBB1FBD402800856E6F /* SYSQLCommandHandle+CreateTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYSQLCommandHandle+CreateTable.h"; sourceTree = "<group>"; };
+		11741DBD1FBD402800856E6F /* SYSQLCommandHandle+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYSQLCommandHandle+Insert.m"; sourceTree = "<group>"; };
+		11741DBE1FBD402800856E6F /* SYSQLCommandHandle+Insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYSQLCommandHandle+Insert.h"; sourceTree = "<group>"; };
+		11741DC01FBD402800856E6F /* SYSQLCommandHandle+Read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYSQLCommandHandle+Read.h"; sourceTree = "<group>"; };
+		11741DC11FBD402800856E6F /* SYSQLCommandHandle+Read.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYSQLCommandHandle+Read.m"; sourceTree = "<group>"; };
+		11741DC91FBD405E00856E6F /* SYBaseTable+Insert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYBaseTable+Insert.h"; sourceTree = "<group>"; };
+		11741DCA1FBD405E00856E6F /* SYBaseTable+Insert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SYBaseTable+Insert.m"; sourceTree = "<group>"; };
+		11741DD01FBD4C1D00856E6F /* SYSQLCommandHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSQLCommandHandle.h; sourceTree = "<group>"; };
+		11741DD11FBD4C1D00856E6F /* SYDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDataBase.m; sourceTree = "<group>"; };
+		11741DD21FBD4C1D00856E6F /* SYBaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBaseTable.m; sourceTree = "<group>"; };
+		11741DD31FBD4C1D00856E6F /* SYDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDatabasePool.h; sourceTree = "<group>"; };
+		11741DD41FBD4C1D00856E6F /* SYBaseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBaseRecord.m; sourceTree = "<group>"; };
+		11741DD51FBD4C1D00856E6F /* SYDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDataBase.h; sourceTree = "<group>"; };
+		11741DD61FBD4C1D00856E6F /* SYSQLCommandHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSQLCommandHandle.m; sourceTree = "<group>"; };
+		11741DD71FBD4C1D00856E6F /* SYBaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBaseTable.h; sourceTree = "<group>"; };
+		11741DD81FBD4C1D00856E6F /* SYBaseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBaseRecord.h; sourceTree = "<group>"; };
+		11741DD91FBD4C1D00856E6F /* SYDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDatabasePool.m; sourceTree = "<group>"; };
+		11741DE51FBD4D5800856E6F /* SYBaseTable+Read.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYBaseTable+Read.h"; sourceTree = "<group>"; };
+		11741DE61FBD4D5800856E6F /* SYBaseTable+Read.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SYBaseTable+Read.m"; sourceTree = "<group>"; };
+		11741DE81FBD4E9A00856E6F /* SYBaseTable+Update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYBaseTable+Update.h"; sourceTree = "<group>"; };
+		11741DE91FBD4E9A00856E6F /* SYBaseTable+Update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SYBaseTable+Update.m"; sourceTree = "<group>"; };
+		11741DEB1FBD4EB000856E6F /* SYBaseTable+Delete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYBaseTable+Delete.h"; sourceTree = "<group>"; };
+		11741DEC1FBD4EB000856E6F /* SYBaseTable+Delete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SYBaseTable+Delete.m"; sourceTree = "<group>"; };
+		11741DF21FBD5CA200856E6F /* TextTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextTable.h; sourceTree = "<group>"; };
+		11741DF31FBD5CA200856E6F /* TextTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextTable.m; sourceTree = "<group>"; };
+		11741DF51FBD5CBD00856E6F /* SYTableFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableFrame.h; sourceTree = "<group>"; };
+		11741DF81FBD5D9400856E6F /* TestRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRecord.h; sourceTree = "<group>"; };
+		11741DF91FBD5D9400856E6F /* TestRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRecord.m; sourceTree = "<group>"; };
+		11741DFB1FBD78D800856E6F /* ImageTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTable.h; sourceTree = "<group>"; };
+		11741DFC1FBD78D800856E6F /* ImageTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTable.m; sourceTree = "<group>"; };
+		11741DFE1FBD7ABB00856E6F /* ImageRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageRecord.h; sourceTree = "<group>"; };
+		11741DFF1FBD7ABB00856E6F /* ImageRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRecord.m; sourceTree = "<group>"; };
+		11741E011FBD7BB100856E6F /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11741D641FBD205200856E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11741D5E1FBD205200856E6F = {
+			isa = PBXGroup;
+			children = (
+				11741D691FBD205200856E6F /* SYSQLFrame */,
+				11741D681FBD205200856E6F /* Products */,
+				11741D871FBD2CEE00856E6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11741D681FBD205200856E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11741D671FBD205200856E6F /* SYSQLFrame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11741D691FBD205200856E6F /* SYSQLFrame */ = {
+			isa = PBXGroup;
+			children = (
+				11741D6A1FBD205200856E6F /* AppDelegate.h */,
+				11741D6B1FBD205200856E6F /* AppDelegate.m */,
+				11741D6D1FBD205200856E6F /* ViewController.h */,
+				11741D6E1FBD205200856E6F /* ViewController.m */,
+				11741DF21FBD5CA200856E6F /* TextTable.h */,
+				11741DF31FBD5CA200856E6F /* TextTable.m */,
+				11741DF81FBD5D9400856E6F /* TestRecord.h */,
+				11741DF91FBD5D9400856E6F /* TestRecord.m */,
+				11741DFB1FBD78D800856E6F /* ImageTable.h */,
+				11741DFC1FBD78D800856E6F /* ImageTable.m */,
+				11741DFE1FBD7ABB00856E6F /* ImageRecord.h */,
+				11741DFF1FBD7ABB00856E6F /* ImageRecord.m */,
+				11741D801FBD244300856E6F /* SYBaseTable */,
+				11741D701FBD205200856E6F /* Main.storyboard */,
+				11741D731FBD205200856E6F /* Assets.xcassets */,
+				11741D751FBD205200856E6F /* LaunchScreen.storyboard */,
+				11741D781FBD205200856E6F /* Info.plist */,
+				11741E011FBD7BB100856E6F /* 2.jpg */,
+				11741D791FBD205200856E6F /* main.m */,
+			);
+			path = SYSQLFrame;
+			sourceTree = "<group>";
+		};
+		11741D801FBD244300856E6F /* SYBaseTable */ = {
+			isa = PBXGroup;
+			children = (
+				11741DF51FBD5CBD00856E6F /* SYTableFrame.h */,
+				11741DCF1FBD4C1D00856E6F /* FrameBase */,
+				11741DC61FBD403100856E6F /* TableOperation */,
+				11741DB51FBD402800856E6F /* SQLCommand */,
+			);
+			path = SYBaseTable;
+			sourceTree = "<group>";
+		};
+		11741D871FBD2CEE00856E6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11741D881FBD2CEE00856E6F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11741DB51FBD402800856E6F /* SQLCommand */ = {
+			isa = PBXGroup;
+			children = (
+				11741DB61FBD402800856E6F /* SQLUpdateCommand */,
+				11741DB91FBD402800856E6F /* SQLTableCreateCommand */,
+				11741DBC1FBD402800856E6F /* SQLInsertCommand */,
+				11741DBF1FBD402800856E6F /* SQLReadCommand */,
+			);
+			path = SQLCommand;
+			sourceTree = "<group>";
+		};
+		11741DB61FBD402800856E6F /* SQLUpdateCommand */ = {
+			isa = PBXGroup;
+			children = (
+				11741DB81FBD402800856E6F /* SYSQLCommandHandle+Update.h */,
+				11741DB71FBD402800856E6F /* SYSQLCommandHandle+Update.m */,
+			);
+			path = SQLUpdateCommand;
+			sourceTree = "<group>";
+		};
+		11741DB91FBD402800856E6F /* SQLTableCreateCommand */ = {
+			isa = PBXGroup;
+			children = (
+				11741DBB1FBD402800856E6F /* SYSQLCommandHandle+CreateTable.h */,
+				11741DBA1FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m */,
+			);
+			path = SQLTableCreateCommand;
+			sourceTree = "<group>";
+		};
+		11741DBC1FBD402800856E6F /* SQLInsertCommand */ = {
+			isa = PBXGroup;
+			children = (
+				11741DBE1FBD402800856E6F /* SYSQLCommandHandle+Insert.h */,
+				11741DBD1FBD402800856E6F /* SYSQLCommandHandle+Insert.m */,
+			);
+			path = SQLInsertCommand;
+			sourceTree = "<group>";
+		};
+		11741DBF1FBD402800856E6F /* SQLReadCommand */ = {
+			isa = PBXGroup;
+			children = (
+				11741DC01FBD402800856E6F /* SYSQLCommandHandle+Read.h */,
+				11741DC11FBD402800856E6F /* SYSQLCommandHandle+Read.m */,
+			);
+			path = SQLReadCommand;
+			sourceTree = "<group>";
+		};
+		11741DC61FBD403100856E6F /* TableOperation */ = {
+			isa = PBXGroup;
+			children = (
+				11741DE01FBD4D4300856E6F /* TableDeleteOp */,
+				11741DE11FBD4D4300856E6F /* TableReadOp */,
+				11741DC71FBD403100856E6F /* TableUpdateOp */,
+				11741DC81FBD403100856E6F /* TableInsertOp */,
+			);
+			path = TableOperation;
+			sourceTree = "<group>";
+		};
+		11741DC71FBD403100856E6F /* TableUpdateOp */ = {
+			isa = PBXGroup;
+			children = (
+				11741DE81FBD4E9A00856E6F /* SYBaseTable+Update.h */,
+				11741DE91FBD4E9A00856E6F /* SYBaseTable+Update.m */,
+			);
+			path = TableUpdateOp;
+			sourceTree = "<group>";
+		};
+		11741DC81FBD403100856E6F /* TableInsertOp */ = {
+			isa = PBXGroup;
+			children = (
+				11741DC91FBD405E00856E6F /* SYBaseTable+Insert.h */,
+				11741DCA1FBD405E00856E6F /* SYBaseTable+Insert.m */,
+			);
+			path = TableInsertOp;
+			sourceTree = "<group>";
+		};
+		11741DCF1FBD4C1D00856E6F /* FrameBase */ = {
+			isa = PBXGroup;
+			children = (
+				11741DD71FBD4C1D00856E6F /* SYBaseTable.h */,
+				11741DD21FBD4C1D00856E6F /* SYBaseTable.m */,
+				11741DD01FBD4C1D00856E6F /* SYSQLCommandHandle.h */,
+				11741DD61FBD4C1D00856E6F /* SYSQLCommandHandle.m */,
+				11741DD81FBD4C1D00856E6F /* SYBaseRecord.h */,
+				11741DD41FBD4C1D00856E6F /* SYBaseRecord.m */,
+				11741DD51FBD4C1D00856E6F /* SYDataBase.h */,
+				11741DD11FBD4C1D00856E6F /* SYDataBase.m */,
+				11741DD31FBD4C1D00856E6F /* SYDatabasePool.h */,
+				11741DD91FBD4C1D00856E6F /* SYDatabasePool.m */,
+			);
+			path = FrameBase;
+			sourceTree = "<group>";
+		};
+		11741DE01FBD4D4300856E6F /* TableDeleteOp */ = {
+			isa = PBXGroup;
+			children = (
+				11741DEB1FBD4EB000856E6F /* SYBaseTable+Delete.h */,
+				11741DEC1FBD4EB000856E6F /* SYBaseTable+Delete.m */,
+			);
+			path = TableDeleteOp;
+			sourceTree = "<group>";
+		};
+		11741DE11FBD4D4300856E6F /* TableReadOp */ = {
+			isa = PBXGroup;
+			children = (
+				11741DE51FBD4D5800856E6F /* SYBaseTable+Read.h */,
+				11741DE61FBD4D5800856E6F /* SYBaseTable+Read.m */,
+			);
+			path = TableReadOp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11741D661FBD205200856E6F /* SYSQLFrame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11741D7D1FBD205200856E6F /* Build configuration list for PBXNativeTarget "SYSQLFrame" */;
+			buildPhases = (
+				11741D631FBD205200856E6F /* Sources */,
+				11741D641FBD205200856E6F /* Frameworks */,
+				11741D651FBD205200856E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYSQLFrame;
+			productName = SYSQLFrame;
+			productReference = 11741D671FBD205200856E6F /* SYSQLFrame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11741D5F1FBD205200856E6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = EOC;
+				TargetAttributes = {
+					11741D661FBD205200856E6F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 11741D621FBD205200856E6F /* Build configuration list for PBXProject "SYSQLFrame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11741D5E1FBD205200856E6F;
+			productRefGroup = 11741D681FBD205200856E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11741D661FBD205200856E6F /* SYSQLFrame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11741D651FBD205200856E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11741D771FBD205200856E6F /* LaunchScreen.storyboard in Resources */,
+				11741D741FBD205200856E6F /* Assets.xcassets in Resources */,
+				11741E021FBD7BB100856E6F /* 2.jpg in Resources */,
+				11741D721FBD205200856E6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11741D631FBD205200856E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11741DDB1FBD4C1D00856E6F /* SYBaseTable.m in Sources */,
+				11741D6F1FBD205200856E6F /* ViewController.m in Sources */,
+				11741DEA1FBD4E9A00856E6F /* SYBaseTable+Update.m in Sources */,
+				11741DE71FBD4D5800856E6F /* SYBaseTable+Read.m in Sources */,
+				11741DDE1FBD4C1D00856E6F /* SYDatabasePool.m in Sources */,
+				11741DF41FBD5CA200856E6F /* TextTable.m in Sources */,
+				11741DC21FBD402800856E6F /* SYSQLCommandHandle+Update.m in Sources */,
+				11741DDA1FBD4C1D00856E6F /* SYDataBase.m in Sources */,
+				11741D7A1FBD205200856E6F /* main.m in Sources */,
+				11741DFD1FBD78D800856E6F /* ImageTable.m in Sources */,
+				11741E001FBD7ABB00856E6F /* ImageRecord.m in Sources */,
+				11741D6C1FBD205200856E6F /* AppDelegate.m in Sources */,
+				11741DFA1FBD5D9400856E6F /* TestRecord.m in Sources */,
+				11741DDD1FBD4C1D00856E6F /* SYSQLCommandHandle.m in Sources */,
+				11741DDC1FBD4C1D00856E6F /* SYBaseRecord.m in Sources */,
+				11741DC51FBD402800856E6F /* SYSQLCommandHandle+Read.m in Sources */,
+				11741DED1FBD4EB000856E6F /* SYBaseTable+Delete.m in Sources */,
+				11741DCB1FBD405E00856E6F /* SYBaseTable+Insert.m in Sources */,
+				11741DC41FBD402800856E6F /* SYSQLCommandHandle+Insert.m in Sources */,
+				11741DC31FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11741D701FBD205200856E6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11741D711FBD205200856E6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11741D751FBD205200856E6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11741D761FBD205200856E6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11741D7B1FBD205200856E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11741D7C1FBD205200856E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11741D7E1FBD205200856E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYSQLFrame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EOC.SYSQLFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11741D7F1FBD205200856E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYSQLFrame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EOC.SYSQLFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11741D621FBD205200856E6F /* Build configuration list for PBXProject "SYSQLFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11741D7B1FBD205200856E6F /* Debug */,
+				11741D7C1FBD205200856E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11741D7D1FBD205200856E6F /* Build configuration list for PBXNativeTarget "SYSQLFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11741D7E1FBD205200856E6F /* Debug */,
+				11741D7F1FBD205200856E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11741D5F1FBD205200856E6F /* Project object */;
+}
