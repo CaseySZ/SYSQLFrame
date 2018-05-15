@@ -21,3 +21,4 @@
 @interface SYBaseRecord : NSObject<SYBaseRecordProtocol>
 
 @end
+

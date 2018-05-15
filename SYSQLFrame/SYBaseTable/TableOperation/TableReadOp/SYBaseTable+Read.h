@@ -14,4 +14,9 @@
 // 读操作 读记录
 - (NSArray*)getAllRecordFromTable;
 
+
+- (NSArray*)getRecordWithLikeCondition:(NSString*)condition likeKey:(NSString*)likeKey;
+
+//
+- (NSArray *)selectRecordWithCustomCondition:(NSString*)condition;
 @end

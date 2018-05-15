@@ -18,4 +18,16 @@
     
 }
 
+- (void)preSqlReadRecordTableName:(NSString*)tableName likeCondition:(NSString*)condition likeKey:(NSString*)likeKey{
+    
+    self.sqlCommand = nil;
+    self.sqlCommand = [NSMutableString string];
+    [self.sqlCommand appendFormat:@"select *from %@ where %@ like '%%%@%%'", tableName, likeKey, condition];
+}
+
+- (void)preSqlReadRecordTableName:(NSString*)tableName customCondition:(NSString*)condition{
+    self.sqlCommand = nil;
+    self.sqlCommand = [[NSMutableString alloc] initWithFormat:@"select * from %@ %@", tableName,condition];
+    
+}
 @end

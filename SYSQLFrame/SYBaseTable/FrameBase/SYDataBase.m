@@ -17,8 +17,11 @@
     if (self) {
         
         _dataBaseName = dataBaseName;
-        _dataBaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"SYSqlDoc"];
+        _dataBaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:SQLDocumentName];
         _dataBaseFilePath = [_dataBaseFilePath stringByAppendingPathComponent:dataBaseName];
+        
+        NSLog(@"%@", _dataBaseFilePath);
+        
         // 判断文件夹是否存在
         NSString *checkDocumentPath = [_dataBaseFilePath stringByDeletingLastPathComponent];
         NSFileManager *defaultFileManager = [NSFileManager defaultManager];
@@ -33,6 +36,7 @@
             
             NSString *sqlErrorStr = [NSString stringWithUTF8String:sqlite3_errmsg(_dataBaseSql)];
             *error = [NSError errorWithDomain:@"Sql_Open_Error" code:100 userInfo:@{@"ErrorInfo":sqlErrorStr}];
+            NSLog(@"sql::%@", *error);
             [self closeDatabase];
             return nil;
         }

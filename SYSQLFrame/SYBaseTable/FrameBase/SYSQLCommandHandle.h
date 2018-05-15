@@ -32,7 +32,7 @@
 // 写语句 值已经在SQL语句里面
 - (BOOL)excuteWriteSQLCommand;
 
-//写语句 值没在SQL语句里面
+//写语句 值没在SQL语句里面，需要valueAry来填充
 - (BOOL)excuteWriteSqlBinary:(NSArray*)valueAry;
 
 @end

@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 
+
+#define SQLDocumentName @"SYSqlDoc"
+
 @interface SYDataBase : NSObject
 
 @property (nonatomic, strong, readonly)NSString *dataBaseName;

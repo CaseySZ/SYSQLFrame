@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114E7E2C20AAE42500FC5384 /* SYSQLCommandHandle+Delete.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E7E2B20AAE42500FC5384 /* SYSQLCommandHandle+Delete.m */; };
+		114E7E2F20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E7E2D20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.m */; };
 		11741D6C1FBD205200856E6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741D6B1FBD205200856E6F /* AppDelegate.m */; };
 		11741D6F1FBD205200856E6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11741D6E1FBD205200856E6F /* ViewController.m */; };
 		11741D721FBD205200856E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11741D701FBD205200856E6F /* Main.storyboard */; };
@@ -34,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114E7E2A20AAE42500FC5384 /* SYSQLCommandHandle+Delete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYSQLCommandHandle+Delete.h"; sourceTree = "<group>"; };
+		114E7E2B20AAE42500FC5384 /* SYSQLCommandHandle+Delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYSQLCommandHandle+Delete.m"; sourceTree = "<group>"; };
+		114E7E2D20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SYBaseRecord.m"; sourceTree = "<group>"; };
+		114E7E2E20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SYBaseRecord.h"; sourceTree = "<group>"; };
 		11741D671FBD205200856E6F /* SYSQLFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYSQLFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11741D6A1FBD205200856E6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11741D6B1FBD205200856E6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114E7E2920AAE42500FC5384 /* SQLDeleteCommand */ = {
+			isa = PBXGroup;
+			children = (
+				114E7E2A20AAE42500FC5384 /* SYSQLCommandHandle+Delete.h */,
+				114E7E2B20AAE42500FC5384 /* SYSQLCommandHandle+Delete.m */,
+			);
+			path = SQLDeleteCommand;
+			sourceTree = "<group>";
+		};
 		11741D5E1FBD205200856E6F = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +174,7 @@
 		11741DB51FBD402800856E6F /* SQLCommand */ = {
 			isa = PBXGroup;
 			children = (
+				114E7E2920AAE42500FC5384 /* SQLDeleteCommand */,
 				11741DB61FBD402800856E6F /* SQLUpdateCommand */,
 				11741DB91FBD402800856E6F /* SQLTableCreateCommand */,
 				11741DBC1FBD402800856E6F /* SQLInsertCommand */,
@@ -235,6 +251,8 @@
 		11741DCF1FBD4C1D00856E6F /* FrameBase */ = {
 			isa = PBXGroup;
 			children = (
+				114E7E2E20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.h */,
+				114E7E2D20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.m */,
 				11741DD71FBD4C1D00856E6F /* SYBaseTable.h */,
 				11741DD21FBD4C1D00856E6F /* SYBaseTable.m */,
 				11741DD01FBD4C1D00856E6F /* SYSQLCommandHandle.h */,
@@ -345,6 +363,7 @@
 				11741DE71FBD4D5800856E6F /* SYBaseTable+Read.m in Sources */,
 				11741DDE1FBD4C1D00856E6F /* SYDatabasePool.m in Sources */,
 				11741DF41FBD5CA200856E6F /* TextTable.m in Sources */,
+				114E7E2C20AAE42500FC5384 /* SYSQLCommandHandle+Delete.m in Sources */,
 				11741DC21FBD402800856E6F /* SYSQLCommandHandle+Update.m in Sources */,
 				11741DDA1FBD4C1D00856E6F /* SYDataBase.m in Sources */,
 				11741D7A1FBD205200856E6F /* main.m in Sources */,
@@ -356,6 +375,7 @@
 				11741DDC1FBD4C1D00856E6F /* SYBaseRecord.m in Sources */,
 				11741DC51FBD402800856E6F /* SYSQLCommandHandle+Read.m in Sources */,
 				11741DED1FBD4EB000856E6F /* SYBaseTable+Delete.m in Sources */,
+				114E7E2F20AAE42E00FC5384 /* NSDictionary+SYBaseRecord.m in Sources */,
 				11741DCB1FBD405E00856E6F /* SYBaseTable+Insert.m in Sources */,
 				11741DC41FBD402800856E6F /* SYSQLCommandHandle+Insert.m in Sources */,
 				11741DC31FBD402800856E6F /* SYSQLCommandHandle+CreateTable.m in Sources */,

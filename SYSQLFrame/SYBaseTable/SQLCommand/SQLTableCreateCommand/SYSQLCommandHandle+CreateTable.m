@@ -33,7 +33,9 @@
     }];
     
     NSString *columnStr =  [columnAry componentsJoinedByString:@","];
+    
     [self.sqlCommand appendFormat:@"create table if not exists %@ (%@)", tableName, columnStr];
+    
 }
 
 

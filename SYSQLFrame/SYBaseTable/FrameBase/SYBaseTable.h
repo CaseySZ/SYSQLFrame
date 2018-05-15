@@ -19,7 +19,7 @@
 - (NSString*)tableName;
 
 // 表结构
-- (NSDictionary*)colomnValue;
+- (NSDictionary*)columnValue;
 
 // 用于读数据， 数据类型Class，如果是nil，那么就是dict
 - (Class)recordClass;
@@ -28,5 +28,7 @@
 
 
 @interface SYBaseTable : NSObject
+
+- (NSString*)tableFilePath;
 
 @end

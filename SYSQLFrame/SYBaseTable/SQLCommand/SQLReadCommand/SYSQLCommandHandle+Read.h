@@ -12,4 +12,9 @@
 
 - (void)preSqlReadRecordTableName:(NSString*)tableName;
 
+// @"select *from tableName where likeKey like '%%condition%%'"
+- (void)preSqlReadRecordTableName:(NSString*)tableName likeCondition:(NSString*)condition likeKey:(NSString*)likeKey;
+
+// @"select *from tableName where [condition]
+- (void)preSqlReadRecordTableName:(NSString*)tableName customCondition:(NSString*)condition;
 @end

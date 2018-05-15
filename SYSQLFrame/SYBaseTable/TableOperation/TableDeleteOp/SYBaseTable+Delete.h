@@ -10,4 +10,8 @@
 
 @interface SYBaseTable (Delete)
 
+
+- (void)deleteAllTableRecord;
+
+
 @end

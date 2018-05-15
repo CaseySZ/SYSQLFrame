@@ -35,7 +35,7 @@
 
     // 匹配表字段
     NSMutableDictionary *columnDict = [NSMutableDictionary dictionary];
-    [table.colomnValue enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+    [table.columnValue enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         
         if ([dict objectForKey:key]) {
             [columnDict setObject:[dict objectForKey:key] forKey:key];
@@ -69,3 +69,4 @@
 }
 
 @end
+

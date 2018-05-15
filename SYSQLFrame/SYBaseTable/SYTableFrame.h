@@ -12,3 +12,5 @@
 #import "SYBaseTable+Delete.h"
 #import "SYBaseTable+Insert.h"
 #import "SYBaseTable+Update.h"
+#import "NSDictionary+SYBaseRecord.h"
+

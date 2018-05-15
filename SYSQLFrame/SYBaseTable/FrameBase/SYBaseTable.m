@@ -9,6 +9,7 @@
 #import "SYBaseTable.h"
 #import "SYSQLCommandHandle.h"
 #import "SYSQLCommandHandle+CreateTable.h"
+#import "SYDataBase.h"
 
 
 
@@ -29,7 +30,7 @@
             SYSQLCommandHandle *sySqlExcuteHandle = [[SYSQLCommandHandle alloc] initWithDatabaseName:[tmpSelf dataBaseName]];
             
             // 准备sql语句
-            [sySqlExcuteHandle preSqlCreateTableName:[tmpSelf tableName] columnInfo:[tmpSelf colomnValue]];
+            [sySqlExcuteHandle preSqlCreateTableName:[tmpSelf tableName] columnInfo:[tmpSelf columnValue]];
             
             // sql 执行语句
             [sySqlExcuteHandle excuteWriteSQLCommand];
@@ -45,5 +46,13 @@
     return self;
 }
 
+- (NSString*)tableFilePath{
+    
+    id<SYBaseTableProtocol> tmpSelf = (id<SYBaseTableProtocol>)self;
+    
+    NSString* dataBaseFilePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:SQLDocumentName];
+    return [dataBaseFilePath stringByAppendingPathComponent:tmpSelf.dataBaseName];
+    
+}
 
 @end

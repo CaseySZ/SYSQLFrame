@@ -1,4 +1,4 @@
-//
+      //
 //  SYBaseSQLHandle.m
 //  SYSQLFrame
 //
@@ -48,7 +48,7 @@
             int type = sqlite3_column_type(stmt,i);
             if (type == SQLITE_TEXT) {
                 
-                NSString *valueStr = [NSString stringWithFormat:@"%s", sqlite3_column_text(stmt, i)];
+                NSString *valueStr = [NSString stringWithCString:(const char *)sqlite3_column_text(stmt, i) encoding:NSUTF8StringEncoding];
                 [simpleRecordDict setObject:valueStr forKey:columnKey];
                 
             }else if(type == SQLITE_BLOB){
